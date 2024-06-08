@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess My number</title>
+    <link rel="stylesheet" href="count.css">
+</head>
+<body>
+    <div class="first-section">
+        <button style="width: 60px;">Again</button>
+        <p>Between 1 and 20</p>
+    </div>
+    <h1 style="text-align: center; font: size 40px; margin-top: 35px">Guess My Number</h1>
+    <div class="questionsection">
+        <div id="questionmark">?</div>
+        <div class="underline"></div>
+    </div>
+    <div style="display: flex; height:190px; margin: 20px">
+        <div class="left">
+            <input onchange="characterHandler" type="text" id="userAnswer" type="number" maxlength="10">
+            <button onclick="checkHandler">check</button>
+        </div>
+        <div class="right">
+            <p>Start Guessing......</p>
+            <p>Score: <span id="score">20</span></p>
+            <p>highScore: <span id="highscore">0</span></p>
+        </div>
+
+    </div>
+    <script src="count.js"></script>
+</body>
+</html>
